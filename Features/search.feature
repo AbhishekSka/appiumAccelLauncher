@@ -24,12 +24,12 @@ Feature: Search bar on the home screen for the Accel launcher
 
     #positive testing 
 
-    Scenario: Search with character,word, to view web recommendation,app,contacts and settings 
+    Scenario Outline: Search with character,word, to view web recommendation,app,contacts and settings
     Given User is in home screen
     And user focuses on the search bar  
     When Search with <character> 
     Then user should see the web recommendation,app,contacts and settings related to <character>
-    Outline:
+    Examples:
     | character | Web | app |contacts |settings |
     | 'd' | Daraz  | Calendar |Downey  |'Device info' 'Display' 'Sound and Volume'  |
     | 'x' | xiaomi  | Firefox | -  |  -  |
@@ -40,13 +40,13 @@ Feature: Search bar on the home screen for the Accel launcher
     And user focuses on the search bar  
     When Search with <word> 
     Then user should see the web recommendatin,app,contacts and settings related to <word>
-    Outline:
+    Example:
     | word | Web | app |contacts |settings |
     | 'Cont' | content  | Contact | -   | -  |
     | 'x' | xiaomi  | Firefox | -  |  -  |
     | '</script>'| -  | - | -  |  -  |
 
-    Scenario: Web search through search bar home screen  
+    Scenario Outline: Web search through search bar home screen
     Given User is in home screen
     And user taps search bar  
     When user enters <text>  
