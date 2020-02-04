@@ -39,7 +39,7 @@ Feature: Search bar on the home screen for the Accel launcher
     Given User is in home screen
     And user focuses on the search bar  
     When Search with <word> 
-    Then user should see the web recommendatin,app,contacts and settings related to <word>
+    Then user should see the web recommendation,app,contacts and settings related to <word>
     Example:
     | word | Web | app |contacts |settings |
     | 'Cont' | content  | Contact | -   | -  |
