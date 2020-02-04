@@ -12,7 +12,7 @@ Feature: As a user all the installed app could be made visible or invisible
     When user taps on camera app
     And hits "Close"/back
     And user is in the app drawer page
-    Then user shouldnt see the camera app
+    Then user shouldn't see the camera app
 
   Scenario: To hide multiple applications
     Given user is on the hide app menu
@@ -21,14 +21,13 @@ Feature: As a user all the installed app could be made visible or invisible
     And user taps on Google,Phone
     And hits "Close"/back
     And user is in the app drawer page
-    Then user shouldnt see the all the apps
+    Then user shouldn't see the all the apps
 
   Scenario: Search for the applications on the hide app search bar
     Given user is on the hide app menu
     When user enters <keyword>
-    Then user see the <result>
-
-    Example
+    Then user see  <result>
+    Example:
       |keyword|result|
       |"Ca"|"Calculator,Camera,Calendar"|
       |"Play"|"Play Store,Play Games, Play Music, Play Movies"|
@@ -37,9 +36,8 @@ Feature: As a user all the installed app could be made visible or invisible
     Given user is on hide app menu
     And user enters <keyword>
     When user hits backspace to remove keyword
-    Then app should be shorted as per horizontal alpbhabetical order
-
-    Example
+    Then app should be sorted as per horizontal alphabetical order
+    Example:
      |keyword|result|
      |"Ca"|"Calculator,Camera,Calendar"|
      |"Play"|"Play Store,Play Games, Play Music, Play Movies"|

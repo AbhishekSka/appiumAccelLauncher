@@ -27,10 +27,10 @@ Feature: Search bar on the home screen for the Accel launcher
     Scenario Outline: Search with character,word, to view web recommendation,app,contacts and settings
     Given User is in home screen
     And user focuses on the search bar  
-    When Search with <character> 
+    When Search with <characters>
     Then user should see the web recommendation,app,contacts and settings related to <character>
     Examples:
-    | character | Web | app |contacts |settings |
+    | characters | Web | app |contacts |settings |
     | 'd' | Daraz  | Calendar |Downey  |'Device info' 'Display' 'Sound and Volume'  |
     | 'x' | xiaomi  | Firefox | -  |  -  |
     | '{'| -  | - | -  |  -  |
