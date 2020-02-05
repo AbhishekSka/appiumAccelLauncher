@@ -26,3 +26,16 @@ Feature: As a user user should be able to see favourite icons including App draw
     Then Message "No more roome in Favourite tray" should be displayed
 
 
+Feature: Two screen on the initial installation
+
+  Scenario: Presence of two initial screen on home screen with indicators on primary
+    Given user is int the home screen
+    Then user should see two dot
+    And Dot indicator of screen in which user should be highlighted
+
+  Scenario: Moving from primary screen to another
+    Given User is in Home screen
+    When user preforms swipe right
+    Then user should get redirected to another screen
+    And Dot indicator of that scree should be highlighted
+
