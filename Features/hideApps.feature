@@ -1,4 +1,5 @@
 Feature: As a user all the installed app could be made visible or invisible
+
   Background: user is already on the app drawer
 
   Scenario: User is on the Hide apps menu
@@ -27,20 +28,22 @@ Feature: As a user all the installed app could be made visible or invisible
     Given user is on the hide app menu
     When user enters <keyword>
     Then user see  <result>
-    Example:
-      |keyword|result|
-      |"Ca"|"Calculator,Camera,Calendar"|
-      |"Play"|"Play Store,Play Games, Play Music, Play Movies"|
+
+  Example:
+  |keyword|result|
+  |"Ca"|"Calculator,Camera,Calendar"|
+  |"Play"|"Play Store,Play Games, Play Music, Play Movies"|
 
   Scenario: Clearing of search bar after the search
     Given user is on hide app menu
     And user enters <keyword>
     When user hits backspace to remove keyword
     Then app should be sorted as per horizontal alphabetical order
-    Example:
-     |keyword|result|
-     |"Ca"|"Calculator,Camera,Calendar"|
-     |"Play"|"Play Store,Play Games, Play Music, Play Movies"|
+
+  Example:
+  |keyword|result|
+  |"Ca"|"Calculator,Camera,Calendar"|
+  |"Play"|"Play Store,Play Games, Play Music, Play Movies"|
 
 
 
