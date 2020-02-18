@@ -25,6 +25,12 @@ Feature: As a user user should be able to see favourite icons including App draw
     When User drags and release any app to home screen bottom panel over the App drawer button
     Then Message "No more roome in Favourite tray" should be displayed
 
+  Scenario: Removing the favourite apps
+    Given User is in the home screen
+    When User holds down the app
+    Then "Remove" should appear on top of screen
+    And user should be able to remove app by upward fling
+
 
 Feature: Two screen on the initial installation
 
@@ -38,4 +44,6 @@ Feature: Two screen on the initial installation
     When user preforms swipe right
     Then user should get redirected to another screen
     And Dot indicator of that scree should be highlighted
+
+
 
