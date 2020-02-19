@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="ALtest" >
         <classes>
-            <class name="org.example.DriverSetup" />
+            <class name="TestNGRunner.runOnboarding" />
         </classes>
     </test>
 </suite>
