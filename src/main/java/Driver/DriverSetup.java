@@ -27,7 +27,7 @@ public class DriverSetup {
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("platformVersion", "5.1");
         desiredCapabilities.setCapability("deviceName", "HUAWEI TAG-L22");
-        desiredCapabilities.setCapability("app", "/home/yipl/Projects/appiumAccelLauncher/app/ALFeb13.apk");
+        desiredCapabilities.setCapability("app", "/home/yipl/Projects/appiumAccelLauncher/app/AL_Feb20.apk");
         desiredCapabilities.setCapability("autoGrantPermissions", "true");
         desiredCapabilities.setCapability("appPackage", "com.accel.launcher");
         desiredCapabilities.setCapability("appActivity", "com.android.launcher3.Launcher");

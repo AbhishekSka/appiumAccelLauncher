@@ -8,9 +8,16 @@ public class runOnboarding  extends DriverSetup{
     OnBoarding onBoarding;
 
     @Test
-    public void runOnBoardingTest() throws InterruptedException {
+    public void runNormalOnBoardingTest() throws InterruptedException {
         onBoarding = new OnBoarding(aDriver);
-        onBoarding.testOnBoarding();
+        onBoarding.normalOnBoarding();
+    }
+
+
+    @Test
+    public void runSkipOnboardingTest() throws InterruptedException {
+        onBoarding = new OnBoarding(aDriver);
+         onBoarding.skipOnboarding();
 
     }
 
