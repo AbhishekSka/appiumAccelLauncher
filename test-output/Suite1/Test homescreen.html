@@ -1,0 +1,229 @@
+<html>
+<head>
+<title>TestNG:  Test homescreen</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test homescreen</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 02 13:28:55 NPT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>60 seconds (60225 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGRunner.runHomeScreen.checkFavApp()'><b>checkFavApp</b><br>Test class: TestNGRunner.runHomeScreen<br/>
+<a href="#Output-436094532" onClick='toggleBox("Output-436094532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-436094532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-436094532">
+Welcome to 
+ Accel Launcher<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;yipl-Inspiron-3543&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-40-generic&apos;, java.version: &apos;11.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, databaseEnabled: false, desired: {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, deviceName: Moto G (4), platform: ANDROID, platformName: android, udid: ZY223BL79Q, version: 7.0}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223BL79Q, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: ZY223BL79Q, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: ANDROID, platformName: Android, platformVersion: 7.0, statBarHeight: 61, takesScreenshot: true, udid: ZY223BL79Q, version: 7.0, viewportRect: {height: 1737, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 05359324-8231-4096-b6b8-06e05bc9873d
+*** Element info: {Using=id, value=com.accel.launcher:id/next_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Tests.OnBoarding.skipOnboarding(OnBoarding.java:72)
+	at TestNGRunner.runHomeScreen.checkFavApp(runHomeScreen.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace436094532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace436094532'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;yipl-Inspiron-3543&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.3.0-40-generic&apos;, java.version: &apos;11.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, databaseEnabled: false, desired: {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, deviceName: Moto G (4), platform: ANDROID, platformName: android, udid: ZY223BL79Q, version: 7.0}, deviceApiLevel: 24, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223BL79Q, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: ZY223BL79Q, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: ANDROID, platformName: Android, platformVersion: 7.0, statBarHeight: 61, takesScreenshot: true, udid: ZY223BL79Q, version: 7.0, viewportRect: {height: 1737, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 05359324-8231-4096-b6b8-06e05bc9873d
+*** Element info: {Using=id, value=com.accel.launcher:id/next_button}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Tests.OnBoarding.skipOnboarding(OnBoarding.java:72)
+	at TestNGRunner.runHomeScreen.checkFavApp(runHomeScreen.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></div></td>
+<td>4</td>
+<td>TestNGRunner.runHomeScreen@799d4f69</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGRunner.runOnboarding.runNormalOnBoardingTest()'><b>runNormalOnBoardingTest</b><br>Test class: TestNGRunner.runOnboarding<br/>
+<a href="#Output-1261044180" onClick='toggleBox("Output-1261044180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261044180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261044180">
+Welcome to 
+ Accel Launcher<br/>
+Accel Launcher<br/>
+Hide apps<br/>
+Gestures<br/>
+Accelerate your productivity<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>TestNGRunner.runOnboarding@2473b9ce</td></tr>
+<tr>
+<td title='TestNGRunner.runOnboarding.runSkipOnboardingTest()'><b>runSkipOnboardingTest</b><br>Test class: TestNGRunner.runOnboarding<br/>
+<a href="#Output-173791568" onClick='toggleBox("Output-173791568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-173791568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-173791568">
+Welcome to 
+ Accel Launcher<br/>
+Accel Launcher<br/>
+Accelerate your productivity<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>TestNGRunner.runOnboarding@2473b9ce</td></tr>
+</table><p>
+</body>
+</html>

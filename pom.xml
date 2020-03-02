@@ -59,8 +59,27 @@
             <scope>compile</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.testinium.deviceinformation</groupId>
+            <artifactId>device-information</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>public</name>
+            <url>http://mvn.testinium.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Welcome to 
+ Accel Launcher]]>
+    </line>
+    <line>
+      <![CDATA[Accel Launcher]]>
+    </line>
+    <line>
+      <![CDATA[Accelerate your productivity]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-03-02T16:07:02 NPT" name="Default Suite" finished-at="2020-03-02T16:08:15 NPT" duration-ms="73529">
+    <groups>
+    </groups>
+    <test started-at="2020-03-02T16:07:02 NPT" name="appiumAccelLauncher" finished-at="2020-03-02T16:08:15 NPT" duration-ms="73529">
+      <class name="TestNGRunner.runHomeScreen">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNGRunner.runHomeScreen@2473b9ce]" started-at="2020-03-02T16:07:02 NPT" name="setup" finished-at="2020-03-02T16:07:58 NPT" duration-ms="55856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkFavApp()[pri:0, instance:TestNGRunner.runHomeScreen@2473b9ce]" started-at="2020-03-02T16:07:58 NPT" name="checkFavApp" finished-at="2020-03-02T16:08:13 NPT" duration-ms="15332" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'yipl-Inspiron-3543', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-40-generic', java.version: '11.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, databaseEnabled: false, desired: {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, deviceName: CAM-L21, platform: ANDROID, platformName: android, udid: LHTDU17405005702, version: 6.0}, deviceApiLevel: 23, deviceManufacturer: HUAWEI, deviceModel: CAM-L21, deviceName: LHTDU17405005702, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: LHTDU17405005702, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: ANDROID, platformName: Android, platformVersion: 6.0, statBarHeight: 48, takesScreenshot: true, udid: LHTDU17405005702, version: 6.0, viewportRect: {height: 1160, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: aae455b4-f066-4e4e-8fea-48c85cd9bbd4
+*** Element info: {Using=xpath, value=//android.widget.TextView[@content-desc="Phone"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'yipl-Inspiron-3543', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-40-generic', java.version: '11.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, databaseEnabled: false, desired: {app: /home/yipl/Projects/appiumA..., appActivity: com.android.launcher3.Launcher, appPackage: com.accel.launcher, autoGrantPermissions: true, deviceName: CAM-L21, platform: ANDROID, platformName: android, udid: LHTDU17405005702, version: 6.0}, deviceApiLevel: 23, deviceManufacturer: HUAWEI, deviceModel: CAM-L21, deviceName: LHTDU17405005702, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: LHTDU17405005702, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: ANDROID, platformName: Android, platformVersion: 6.0, statBarHeight: 48, takesScreenshot: true, udid: LHTDU17405005702, version: 6.0, viewportRect: {height: 1160, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: aae455b4-f066-4e4e-8fea-48c85cd9bbd4
+*** Element info: {Using=xpath, value=//android.widget.TextView[@content-desc="Phone"]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at Tests.HomeScreen.checkFavIcons(HomeScreen.java:30)
+at TestNGRunner.runHomeScreen.checkFavApp(runHomeScreen.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Welcome to 
+ Accel Launcher]]>
+            </line>
+            <line>
+              <![CDATA[Accel Launcher]]>
+            </line>
+            <line>
+              <![CDATA[Accelerate your productivity]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkFavApp -->
+        <test-method signature="checkSearchBar()[pri:0, instance:TestNGRunner.runHomeScreen@2473b9ce]" started-at="2020-03-02T16:08:13 NPT" name="checkSearchBar" finished-at="2020-03-02T16:08:15 NPT" duration-ms="2278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSearchBar -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestNGRunner.runHomeScreen@2473b9ce]" started-at="2020-03-02T16:08:15 NPT" name="close" finished-at="2020-03-02T16:08:17 NPT" duration-ms="1389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNGRunner.runHomeScreen -->
+    </test> <!-- appiumAccelLauncher -->
+  </suite> <!-- Default Suite -->
+</testng-results>

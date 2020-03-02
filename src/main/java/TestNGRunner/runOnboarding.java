@@ -1,7 +1,7 @@
 package TestNGRunner;
 
 import Driver.DriverSetup;
-import OnBoarding.OnBoarding;
+import Tests.OnBoarding;
 import org.testng.annotations.Test;
 
 public class runOnboarding  extends DriverSetup{
