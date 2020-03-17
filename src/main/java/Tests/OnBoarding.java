@@ -89,8 +89,6 @@ public class OnBoarding extends DriverSetup {
         Thread.sleep(3000);
         aDriver.findElement(By.id("com.accel.launcher:id/btn_set_default_launcher")).isDisplayed();
 
-
-
     }
 
 }
